@@ -1,0 +1,54 @@
+/* Custom styles for Khan IT */
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Timeline Vertical Line Gradient */
+.timeline-line {
+    background: linear-gradient(to bottom, #3b82f6 0%, #3b82f6 20%, #8b5cf6 40%, #ec4899 60%, #10b981 80%, #10b981 100%);
+}
+
+/* Timeline Card Styles (Light Theme) */
+.timeline-card {
+    background: #ffffff;
+    border: 1px solid #f3f4f6;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure smooth transition for dropdowns if needed, 
+   though Tailwind 'group-hover' handles most of it. */
+.group:hover .group-hover\:visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* Card base */
+.timeline-card {
+  background: linear-gradient(135deg, #eaf2ff, #dbeafe);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.08);
+}
+
+/* Color variants via parent order */
+.relative:nth-of-type(1) .timeline-card {
+  background: linear-gradient(135deg, #e8f1ff, #cfe0ff); /* Blue */
+}
+
+.relative:nth-of-type(2) .timeline-card {
+  background: linear-gradient(135deg, #eef2ff, #dcdcff); /* Indigo */
+}
+
+.relative:nth-of-type(3) .timeline-card {
+  background: linear-gradient(135deg, #f3e8ff, #e9d5ff); /* Purple */
+}
+
+.relative:nth-of-type(4) .timeline-card {
+  background: linear-gradient(135deg, #fde7f3, #fbcfe8); /* Pink */
+}
+
+.relative:nth-of-type(5) .timeline-card {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0); /* Green */
+}
